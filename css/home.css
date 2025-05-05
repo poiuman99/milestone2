@@ -47,8 +47,8 @@ body.order-screen {
 
 /* Mascotte */
 .order-screen__mascot {
-  width: 40vw;
-  max-width: 200px;
+  width: 70vw;
+  max-width: 300px;
   height: auto;
   margin: 4vh 0;
 }

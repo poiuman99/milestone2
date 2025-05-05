@@ -11,13 +11,11 @@
 </head>
 <body>
     <header class="header"></header>
-        <img src="img/logo3-uitgeknipt beter copy.png" alt="Logo" width="150">
+        <img class="logo" src="img/logo3-uitgeknipt beter copy.png" alt="Logo" width="150">
     </header>
-    <div class="menu-button">
-        <a href="menu.html" class="menu-button__link">Go to Menu</a>
-    </div>
+    <a href="index.html" class="payment__back-button">&larr; Back</a>
     <div class="buttons">
-        <div class="buttons__button">
+        <div class="buttons__button" onclick="location.href='menu.html';" style="cursor: pointer;">
             <img src="img/eat in uitgeknipt.png" alt="Image 1" class="buttons__image">
             <p class="buttons__text">Eat In</p>
         </div>
@@ -25,6 +23,10 @@
             <img src="img/images.png" alt="Image 2" class="buttons__image">
             <p class="buttons__text">Take Away</p>
         </div>
+    </div>
+    <div class="navigation-buttons"></div>
+        <button onclick="location.href='menu.html';" class="navigation-buttons__button">Eat In</button>
+        <button onclick="location.href='menu.html';" class="navigation-buttons__button">Take Away</button>
     </div>
     <div class="languages">
         <h2 class="languages__title">Select Language</h2>
