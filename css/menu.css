@@ -21,8 +21,10 @@ body.order {
   }
   
   .order__logo {
-    width: 180px;
+    width: 60vw;
+    max-width: 300px;
     height: auto;
+    margin-bottom: 4vh;
   }
   
   .order__main {
@@ -42,24 +44,26 @@ body.order {
   
   .order__content {
     display: flex;
-    width: 100%;
+    width: 90%;
     max-width: 430px;
     margin: 0 auto;
     gap: 1rem;
   }
   
   .order__sidebar {
-    background: #fff;
-    border: 3px solid #00c3ff;
-    border-radius: 8px;
-    padding: 0.5rem 0.2rem;
     width: 110px;
     min-width: 90px;
     margin-right: 0.5rem;
     display: flex;
-    flex-direction: column;
+      flex-direction: column !important;
+      overflow: visible !important;
+      width: 110px;
+      min-width: 90px;
+      margin: 0;
     align-items: center;
     height: fit-content;
+    border-right: 2px solid #000000;
+    gap: 0.5rem;
   }
   
   .sidebar-menu {
@@ -67,20 +71,26 @@ body.order {
     padding: 0;
     margin: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+   
   }
   
   .sidebar-menu__item {
     display: flex;
+    flex-direction: column;
     align-items: center;
     background: #fff;
     border-radius: 25px;
-    margin: 0.3rem 0;
+   
+    margin: 1rem 0; /* test spacing */
     padding: 0.2rem 0.5rem;
     cursor: pointer;
     transition: background 0.2s, box-shadow 0.2s;
     font-size: 1.1rem;
-    border: none;
+    border: 1px solid #000000;
     outline: none;
+    
   }
   
   .sidebar-menu__item:hover,
@@ -168,6 +178,8 @@ body.order {
     align-items: stretch;
     border-radius: 18px 18px 0 0;
     margin-top: 1rem;
+    position: sticky;
+    bottom: 0;
   }
   
   .order__order-type {
@@ -238,11 +250,12 @@ body.order {
       padding: 0;
     }
     .order__content {
-      flex-direction: column;
-      align-items: center;
+      flex-direction: row !important;
+      align-items: flex-start !important;
       max-width: 100vw;
       gap: 0.5rem;
-    }
+      }
+    
     .order__sidebar {
       width: 95vw;
       min-width: unset;
@@ -250,6 +263,7 @@ body.order {
       flex-direction: row;
       overflow-x: auto;
       border-radius: 12px;
+      
     }
     .sidebar-menu {
       display: flex;
@@ -284,8 +298,5 @@ body.order {
       font-size: 1rem;
       padding: 0.2rem 0.5rem;
     }
-    .order__pay-btn {
-      font-size: 1.1rem;
-      padding: 0.2rem 1.2rem;
-    }
+    
   } 

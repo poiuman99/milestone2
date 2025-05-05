@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jetreken Order</title>
+  <title>Leireken Order</title>
   <link rel="stylesheet" href="css/menu.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -15,71 +15,68 @@
       <h1 class="order__menu-title">Menu</h1>
       <div class="order__content">
         <nav class="order__sidebar">
-          <ul class="sidebar-menu">
-            <li class="sidebar-menu__item sidebar-menu__item--active">
-              <span class="sidebar-menu__icon"><img src="img/fries.png" alt="fries"></span>
-              <span class="sidebar-menu__text">fries</span>
+            <ul class="sidebar-menu"></ul>
+            <li class="sidebar-menu__item ">
+              <span class="sidebar-menu__icon">🍟</span>
+              <span class="sidebar-menu__text">Fries</span>
             </li>
-            <li class="sidebar-menu__item">
-              <span class="sidebar-menu__icon"><img src="img/burger.png" alt="burger"></span>
+            <li class="sidebar-menu__item sidebar-menu__item--active">
+              <span class="sidebar-menu__icon">🍔</span>
               <span class="sidebar-menu__text">Burgers</span>
             </li>
             <li class="sidebar-menu__item">
-              <span class="sidebar-menu__icon"><img src="img/snack.png" alt="snack"></span>
+              <span class="sidebar-menu__icon">🍢</span>
               <span class="sidebar-menu__text">Snacks</span>
             </li>
             <li class="sidebar-menu__item">
-              <span class="sidebar-menu__icon"><img src="img/veggie.png" alt="veggie"></span>
+              <span class="sidebar-menu__icon">🥗</span>
               <span class="sidebar-menu__text">Veggie</span>
             </li>
             <li class="sidebar-menu__item">
-              <span class="sidebar-menu__icon"><img src="img/sauce.png" alt="sauce"></span>
-              <span class="sidebar-menu__text">Sauses</span>
+              <span class="sidebar-menu__icon">🥫</span>
+              <span class="sidebar-menu__text">Sauces</span>
             </li>
             <li class="sidebar-menu__item">
-              <span class="sidebar-menu__icon"><img src="img/drink.png" alt="drink"></span>
+              <span class="sidebar-menu__icon">🥤</span>
               <span class="sidebar-menu__text">Drinks</span>
             </li>
-          </ul>
+            </ul>
         </nav>
         <section class="order__products">
           <div class="products-grid">
             <div class="product-card">
-              <div class="product-card__img"><img src="img/hamburger.png" alt="Hamburger"></div>
+              <div class="product-card__img"><img src="img/hamburger.jpg" alt="Hamburger"></div>
               <div class="product-card__name">Hamburger</div>
+              <div class="product-card__price">€4,50</div>
             </div>
             <div class="product-card">
-              <div class="product-card__img"><img src="img/cheeseburger.png" alt="Cheese-Burger"></div>
+              <div class="product-card__img"><img src="img/cheeseburger.jpg" alt="Cheese-Burger"></div>
               <div class="product-card__name">Cheese-Burger</div>
+              <div class="product-card__price">€4,50</div>
             </div>
             <div class="product-card">
-              <div class="product-card__img"><img src="img/bickyburger.png" alt="Bicky-Burger"></div>
+              <div class="product-card__img"><img src="img/bicky burger.webp" alt="Bicky-Burger"></div>
               <div class="product-card__name">Bicky-Burger</div>
               <div class="product-card__price">€4,50</div>
             </div>
             <div class="product-card">
-              <div class="product-card__img"><img src="img/bickycheese.png" alt="Bicky-Cheese"></div>
+              <div class="product-card__img"><img src="img/bicky cheese.jpg" alt="Bicky-Cheese"></div>
               <div class="product-card__name">Bicky-Cheese</div>
               <div class="product-card__price">€4,50</div>
             </div>
             <div class="product-card">
-              <div class="product-card__img"><img src="img/bickychicken.png" alt="Bicky-Chicken"></div>
+              <div class="product-card__img"><img src="img/bicky chicken.webp" alt="Bicky-Chicken"></div>
               <div class="product-card__name">Bicky-Chicken</div>
               <div class="product-card__price">€4,50</div>
             </div>
-            <div class="product-card">
-              <div class="product-card__img"><img src="img/chickenburger.png" alt="Chicken-Burger"></div>
-              <div class="product-card__name">Chicken-Burger</div>
+              <div class="product-card">
+              <div class="product-card__img"><img src="img/bicky fish.jpg" alt="Frikandel"></div>
+              <div class="product-card__name">Bicky-Fish</div>
               <div class="product-card__price">€4,50</div>
             </div>
             <div class="product-card">
-              <div class="product-card__img"><img src="img/frikandel.png" alt="Frikandel"></div>
-              <div class="product-card__name">Frikandel</div>
-              <div class="product-card__price">€4,50</div>
-            </div>
-            <div class="product-card">
-              <div class="product-card__img"><img src="img/kroket.png" alt="Kroket"></div>
-              <div class="product-card__name">Kroket</div>
+              <div class="product-card__img"><img src="img/bicky mexicano.jpg" alt="Kroket"></div>
+              <div class="product-card__name">Bicky-Mexicano</div>
               <div class="product-card__price">€4,50</div>
             </div>
           </div>
@@ -90,9 +87,9 @@
       <div class="order__order-type">Order-Eat In</div>
       <div class="order__summary">
         <div class="order__total">Total= €9,50</div>
-        <button class="order__details-btn">Order details</button>
+        <button class="order__details-btn" onclick="window.location.href='order.html';">Order details</button>
       </div>
-      <button class="order__pay-btn">Pay</button>
+      <button class="order__pay-btn" onclick="window.location.href='payment.html';">Pay</button>
     </footer>
   </div>
 </body>
