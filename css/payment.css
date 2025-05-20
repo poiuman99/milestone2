@@ -10,13 +10,13 @@ body.payment {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    font-size: 1.2rem; /* Basis lettergrootte vergroot */
+    font-size: 1rem;
 }
 
 .payment__container {
     width: 100%;
     height: 100%;
-    padding: 2rem 0; /* Padding vergroot */
+    padding: 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,21 +24,20 @@ body.payment {
 }
 
 .payment__header {
-    margin-top: 1rem; /* Vergroot de marge */
+    margin-top: 0.5rem;
 }
 
 .payment__logo {
-    width: 100vw; /* Vergroot breedte */
-    max-width: 600px; /* Vergroot maximale breedte */
+    width: 80vw;
+    max-width: 300px;
     height: auto;
-    margin-bottom: 5vh; /* Vergroot marge onder */
+    margin-bottom: 2vh;
 }
 
 .payment__title {
-    font-size: 5rem; /* Vergroot lettergrootte */
+    font-size: 2rem;
     font-weight: bold;
-    
-    margin: 1.5rem 0; /* Vergroot marges */
+    margin: 1rem 0;
     text-align: center;
 }
 
@@ -47,17 +46,18 @@ body.payment {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3rem; /* Vergroot de ruimte tussen opties */
-    width: 90%;
-    max-width: 600px; /* Vergroot maximale breedte */
+    gap: 1.5rem;
+    width: 95%;
+    max-width: 350px;
 }
 
 .payment-option {
     background: #fff;
-    border: 3px solid #000; /* Vergroot de rand */
-    border-radius: 20px; /* Vergroot border-radius */
-    padding: 5rem; /* Vergroot padding */
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 4rem; // vergroot de padding
     width: 100%;
+    min-height: 300px; // voeg een minimale hoogte toe
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,19 +67,19 @@ body.payment {
 }
 
 .payment-option:hover {
-    transform: scale(1.05); /* Vergroot hover-effect */
+    transform: scale(1.03);
 }
 
 .payment-option__img {
     width: 100%;
-    max-height: 300px; /* Vergroot maximale hoogte */
+    max-height: 200px;
     object-fit: cover;
-    border-radius: 15px; /* Vergroot border-radius */
-    margin-bottom: 1.5rem; /* Vergroot marge onder */
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
 .payment-option__label {
-    font-size: 4rem; /* Vergroot lettergrootte */
+    font-size: 1.5rem;
     font-weight: bold;
     color: #222;
 }
